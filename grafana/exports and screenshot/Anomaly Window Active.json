@@ -1,0 +1,227 @@
+{
+  "state": "Done",
+  "series": [
+    {
+      "refId": "A",
+      "meta": {
+        "type": "timeseries-multi",
+        "typeVersion": [
+          0,
+          1
+        ],
+        "custom": {
+          "resultType": "matrix"
+        },
+        "executedQueryString": "Expr: anomaly_window_active\nStep: 15s",
+        "preferredVisualisationType": "graph"
+      },
+      "fields": [
+        {
+          "name": "Time",
+          "type": "time",
+          "typeInfo": {
+            "frame": "time.Time"
+          },
+          "config": {
+            "interval": 15000
+          },
+          "values": [
+            1773086895000,
+            1773086910000,
+            1773086925000,
+            1773086940000,
+            1773086955000,
+            1773086970000,
+            1773086985000,
+            1773087000000,
+            1773087015000,
+            1773087030000,
+            1773087045000,
+            1773087060000,
+            1773087075000,
+            1773087090000,
+            1773087105000,
+            1773087120000,
+            1773087135000,
+            1773087150000,
+            1773087165000,
+            1773087180000,
+            1773087195000,
+            1773087210000,
+            1773087225000,
+            1773087240000,
+            1773087255000,
+            1773087270000,
+            1773087285000,
+            1773087300000,
+            1773087315000,
+            1773087330000,
+            1773087345000,
+            1773087360000,
+            1773087375000,
+            1773087390000,
+            1773087405000,
+            1773087420000,
+            1773087435000,
+            1773087450000,
+            1773087465000,
+            1773087480000,
+            1773087495000,
+            1773087510000,
+            1773087525000,
+            1773087540000,
+            1773087555000,
+            1773087570000,
+            1773087585000,
+            1773087600000,
+            1773087615000,
+            1773087630000,
+            1773087645000,
+            1773087660000,
+            1773087675000,
+            1773087690000,
+            1773087705000,
+            1773087720000,
+            1773087735000,
+            1773087750000,
+            1773087765000,
+            1773087780000,
+            1773087795000
+          ],
+          "entities": {},
+          "state": null
+        },
+        {
+          "name": "anomaly_window_active",
+          "type": "number",
+          "typeInfo": {
+            "frame": "float64"
+          },
+          "labels": {
+            "__name__": "anomaly_window_active",
+            "instance": "app:3000",
+            "job": "aiops-app"
+          },
+          "config": {
+            "displayNameFromDS": "Anomaly Active"
+          },
+          "values": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "entities": {},
+          "state": null
+        }
+      ],
+      "length": 61
+    }
+  ],
+  "annotations": [],
+  "request": {
+    "app": "dashboard",
+    "requestId": "Q242",
+    "timezone": "browser",
+    "panelId": 5,
+    "panelPluginId": "timeseries",
+    "dashboardUID": "aiops-dashboard",
+    "range": {
+      "from": "2026-03-09T20:08:23.386Z",
+      "to": "2026-03-09T20:23:23.386Z",
+      "raw": {
+        "from": "now-15m",
+        "to": "now"
+      }
+    },
+    "timeInfo": "",
+    "interval": "15s",
+    "intervalMs": 15000,
+    "targets": [
+      {
+        "expr": "anomaly_window_active",
+        "legendFormat": "Anomaly Active",
+        "refId": "A",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "PBFA97CFB590B2093"
+        }
+      }
+    ],
+    "maxDataPoints": 1162,
+    "scopedVars": {
+      "__interval": {
+        "text": "15s",
+        "value": "15s"
+      },
+      "__interval_ms": {
+        "text": "15000",
+        "value": 15000
+      }
+    },
+    "startTime": 1773087803386,
+    "filters": [],
+    "endTime": 1773087803428
+  },
+  "timings": {
+    "dataProcessingTime": 0
+  },
+  "structureRev": 2
+}

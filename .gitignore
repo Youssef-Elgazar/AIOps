@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Database
+storage/aiops.db
+
+# Logs
+# storage/logs/*.log
+# logs.json
+
+# Traffic generator output
+#ground_truth.json
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
