@@ -1,10 +1,10 @@
 {
-  "anomaly_start_iso": "2026-03-09T20:06:18.014668+00:00",
-  "anomaly_end_iso": "2026-03-09T20:09:06.534604+00:00",
+  "anomaly_start_iso": "2026-03-19T17:56:42.378291+00:00",
+  "anomaly_end_iso": "2026-03-19T17:59:33.827413+00:00",
   "anomaly_type": "error_spike",
   "expected_behavior": "Error rate should spike from ~5% to ~40% on /api/error during anomaly window",
-  "base_total_requests": 30396,
-  "anomaly_total_requests": 7756,
-  "base_error_rate_pct": 6.06,
-  "anomaly_error_rate_pct": 42.6
+  "base_total_requests": 30262,
+  "anomaly_total_requests": 7844,
+  "base_error_rate_pct": 5.89,
+  "anomaly_error_rate_pct": 42.89
 }

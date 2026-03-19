@@ -1,0 +1,32 @@
+{
+  "/api/normal": {
+    "avgLatency": 9.997335871231698,
+    "requestRate": 20.063813539194197,
+    "errorRate": 0,
+    "sampleCount": 96
+  },
+  "/api/slow": {
+    "avgLatency": 9.997335871231698,
+    "requestRate": 5.613774004659918,
+    "errorRate": 0.2965100717517879,
+    "sampleCount": 96
+  },
+  "/api/db": {
+    "avgLatency": 9.997335871231698,
+    "requestRate": 1.2168443821347037,
+    "errorRate": 0.00005118036336783601,
+    "sampleCount": 96
+  },
+  "/api/error": {
+    "avgLatency": 9.996962279835795,
+    "requestRate": 4.391569454506308,
+    "errorRate": 0.9996962279835792,
+    "sampleCount": 96
+  },
+  "/api/validate": {
+    "avgLatency": 9.996962279835795,
+    "requestRate": 0.8434447584104967,
+    "errorRate": 0.5156559102495513,
+    "sampleCount": 96
+  }
+}

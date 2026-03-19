@@ -1,0 +1,555 @@
+[
+  {
+    "incident_id": "7fcd3272-2e33-45fc-a23d-bf1d2d074ac8",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:32:50.198Z",
+    "summary": "SERVICE_DEGRADATION detected with 6 signal(s) affecting /api/normal, /api/slow, /api/db."
+  },
+  {
+    "incident_id": "655bfdeb-8790-465e-a88b-69d3a31482f8",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:33:10.247Z",
+    "summary": "SERVICE_DEGRADATION detected with 10 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "4271e4c4-a350-499a-a4a4-b57b39182420",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:33:30.289Z",
+    "summary": "SERVICE_DEGRADATION detected with 16 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "2c5d7db5-8a29-4111-bd59-de9388dd0ce9",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:33:50.338Z",
+    "summary": "SERVICE_DEGRADATION detected with 13 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "2aa5ea2e-999a-4126-91f8-74ad8f2f28fc",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:34:10.379Z",
+    "summary": "SERVICE_DEGRADATION detected with 11 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "85ff3248-6dea-466e-8900-4e206c45a28f",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:34:30.419Z",
+    "summary": "SERVICE_DEGRADATION detected with 9 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "fa451bd4-2a5d-4813-bf31-ad0b10beab73",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:34:50.464Z",
+    "summary": "SERVICE_DEGRADATION detected with 9 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "9f89c295-cea8-4ebf-a7f2-dc678e605fa9",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:35:10.513Z",
+    "summary": "SERVICE_DEGRADATION detected with 6 signal(s) affecting /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "ff7e17e1-23c8-49b8-9f8c-b6fd4d578350",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:35:30.558Z",
+    "summary": "SERVICE_DEGRADATION detected with 4 signal(s) affecting /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "c23279de-0f02-4aa8-9b1f-e33b89f74ef9",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:41:16.087Z",
+    "summary": "SERVICE_DEGRADATION detected with 5 signal(s) affecting /api/normal, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "717a7a84-bd78-4d93-a3cd-978e4a17d9d9",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:41:36.135Z",
+    "summary": "SERVICE_DEGRADATION detected with 6 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "7b6a5106-77eb-484e-8483-ca1a382a0043",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:41:56.168Z",
+    "summary": "SERVICE_DEGRADATION detected with 7 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "ca664843-c164-487b-9885-108d70cfa576",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:42:16.196Z",
+    "summary": "SERVICE_DEGRADATION detected with 7 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "44ac7853-6f57-4cad-8791-d89874014548",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:42:36.229Z",
+    "summary": "SERVICE_DEGRADATION detected with 6 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "8c54974a-5f18-468b-8d0c-ef9331811bb3",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:42:56.283Z",
+    "summary": "SERVICE_DEGRADATION detected with 6 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "3cd138e6-2cdc-4add-a94a-74349611be7f",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:43:16.314Z",
+    "summary": "SERVICE_DEGRADATION detected with 6 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "02ff9fa5-64e5-442b-adfc-c9e87bbf0b83",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:43:36.357Z",
+    "summary": "SERVICE_DEGRADATION detected with 6 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "aee8d00c-3d8b-401e-a4b3-13598d7e3982",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:43:56.400Z",
+    "summary": "SERVICE_DEGRADATION detected with 6 signal(s) affecting /api/normal, /api/slow, /api/db, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "1a324147-2e9e-44ee-84e1-9ebdcd5a92ec",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "critical",
+    "timestamp": "2026-03-19T17:44:16.441Z",
+    "summary": "SERVICE_DEGRADATION detected with 4 signal(s) affecting /api/normal, /api/slow, /api/error, /api/validate."
+  },
+  {
+    "incident_id": "82f2ca72-e9a5-4e8d-989b-7121f78fa5cc",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:44:36.486Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "a26332bf-0260-4dff-924d-41fa937bf838",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:44:56.531Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "35da8ee8-b122-4e34-8af6-f6c40c186954",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:45:16.575Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "9e28a745-8f98-43d4-a2fb-e7ceb39e902b",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:45:36.624Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "c633c24d-a88f-4685-b1e7-0c47f7eb609a",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:45:56.665Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "b264f551-9c35-4de5-931a-46b29a58ea70",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:46:16.700Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "6fcdc73f-7aba-4d22-8243-2897b9a6f232",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:46:36.743Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "e15244a3-3590-49b0-b375-3a7c3d7001fa",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:46:56.780Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "a8df84da-be0c-46b6-8f9b-fb66ae34fb52",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:47:16.822Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "a8ff2db4-ce8e-4fc5-86e5-2123b99318d4",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:47:36.854Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "32c1191b-2526-4e81-9d36-5f06a3f87e8b",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:47:56.890Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "61e0c2a3-bc28-481e-9bbe-9ddfdbdc5cfe",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:48:16.936Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "c45e18cf-d4c4-4412-96ca-9b8b73b4640d",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:48:36.983Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "237f6b10-5417-43cd-9b1b-b0dd77008d2c",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:48:57.024Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "02006220-8b0b-4b0f-ac6b-c79e478a503c",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:49:17.061Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "2cd3854a-f64d-4d58-8fd6-1fdfde7ef2c9",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:49:37.099Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "d48b13ba-2d9a-4b57-a30e-432c32463e16",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:49:57.136Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "9d6f3db8-515a-4410-a192-f1febf9dc0d3",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:50:17.180Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "537665a0-ee3d-4fab-8ed3-b9e4fd4b3cbb",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:50:37.220Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "0e6f9374-fb0d-4d26-a32f-60e832393ac1",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:50:57.268Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "84927805-96aa-40d8-bace-4bc1ed39b0ee",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:51:17.318Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "30f427aa-0b31-4ba4-a1e3-73882e5e85dc",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:51:37.356Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "1a0efd91-88c4-48a3-a6ca-e3ab7cc581be",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:51:57.394Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "9d1c0980-42ef-431f-a5b7-bb6c903be8fa",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:52:17.446Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "af949c96-181e-426c-b24c-85f93310e921",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:52:37.479Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "3e6a35f4-aacc-41ab-b446-d47ae79827fd",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:52:57.523Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "4fa92056-58ae-4bad-be24-f89ab31f51cd",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:53:17.561Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "347d3b16-7ba5-4598-965d-55a66e276308",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:53:37.604Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "1f329009-cf67-46e9-b7fa-a598534bce21",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:53:57.636Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "c26b12ac-4b0a-4e97-b146-aca791b9b889",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:54:17.670Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "e07badf8-d1ae-4ab2-a59c-9436b44dafe4",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:54:37.703Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "054b8068-2d20-405c-80de-4e419c3870f7",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:54:57.733Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "f90ad5fe-62f8-43d3-80d1-cf5fa46a0832",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:55:17.774Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "12d59d7a-0f7d-4b42-8a17-c6113e9cbdea",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:55:37.820Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "93d0c91e-4523-4677-96a6-717e4c770d52",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:55:57.862Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "18c97816-8056-4081-818f-bc6f6c95554a",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:56:17.901Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "bc0f66d9-d47e-44f1-8d13-c06d3f92fa05",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:56:37.933Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "6a184c28-c230-4807-8407-d23ba69c3c33",
+    "incident_type": "ERROR_STORM",
+    "severity": "medium",
+    "timestamp": "2026-03-19T17:56:57.968Z",
+    "summary": "ERROR_STORM detected with 2 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "1e48aa73-7385-4590-b3a8-df75f93f6113",
+    "incident_type": "ERROR_STORM",
+    "severity": "medium",
+    "timestamp": "2026-03-19T17:57:18.009Z",
+    "summary": "ERROR_STORM detected with 2 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "c1dce5dc-29e6-4c83-87fb-ea58a325bdde",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "high",
+    "timestamp": "2026-03-19T17:57:38.056Z",
+    "summary": "SERVICE_DEGRADATION detected with 3 signal(s) affecting /api/error, /api/validate."
+  },
+  {
+    "incident_id": "e70d92d6-a220-40c7-aee6-d2de6b692539",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "high",
+    "timestamp": "2026-03-19T17:57:58.094Z",
+    "summary": "SERVICE_DEGRADATION detected with 3 signal(s) affecting /api/error, /api/validate."
+  },
+  {
+    "incident_id": "caac2cdd-ae10-4320-9419-6c319a0d671e",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "high",
+    "timestamp": "2026-03-19T17:58:18.134Z",
+    "summary": "SERVICE_DEGRADATION detected with 3 signal(s) affecting /api/error, /api/validate."
+  },
+  {
+    "incident_id": "9cf022b1-950d-4b97-94d6-fe2fb0fd10ab",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "high",
+    "timestamp": "2026-03-19T17:58:38.168Z",
+    "summary": "SERVICE_DEGRADATION detected with 3 signal(s) affecting /api/error, /api/validate."
+  },
+  {
+    "incident_id": "f27715fb-35cb-4c5c-8292-d68fe7c01abd",
+    "incident_type": "SERVICE_DEGRADATION",
+    "severity": "high",
+    "timestamp": "2026-03-19T17:58:58.205Z",
+    "summary": "SERVICE_DEGRADATION detected with 3 signal(s) affecting /api/error, /api/validate."
+  },
+  {
+    "incident_id": "1719db32-02f2-49e4-828a-a1bc15f12ab7",
+    "incident_type": "ERROR_STORM",
+    "severity": "medium",
+    "timestamp": "2026-03-19T17:59:18.239Z",
+    "summary": "ERROR_STORM detected with 2 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "ddc2f41c-3768-4ade-bca0-ccae7704d120",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:59:38.281Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "049331d1-f595-470d-8895-e44ce3af4d70",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T17:59:58.311Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "9ff47809-4f50-4234-be49-326b5db84dd8",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:00:18.352Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "b23c107c-a289-4561-adf7-0dc2cb5381b2",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:00:38.398Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "41a839d8-69f0-45bd-9c23-c4a2dc758344",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:00:58.441Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "4de93f5b-e885-49bf-a9a3-31d61b06d212",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:01:18.476Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "f3590136-b59d-4172-ac2c-efd9e91e9d48",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:01:38.508Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "e300da82-3346-425e-9485-28b9665c6766",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:01:58.551Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "2e5bcb89-c2df-492c-b2fb-de33546011c5",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:02:18.583Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "e993d028-19dc-425f-87e8-3e9e22ce79bf",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:02:38.629Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "7742f952-9b69-4b79-9f1f-229bd3baa1f9",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:02:58.656Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "b6f6e6c2-aca8-4a7d-aa89-80c8fb76d4be",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:03:18.757Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "3eaa97d5-cca4-4002-ab81-ebead5e2027e",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:03:38.804Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "f110f2ca-362f-40e6-9164-871272b381a0",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:03:58.839Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  },
+  {
+    "incident_id": "a168584f-ae9e-4673-8ab1-46ef3fba972e",
+    "incident_type": "LOCALIZED_ENDPOINT_FAILURE",
+    "severity": "low",
+    "timestamp": "2026-03-19T18:04:18.880Z",
+    "summary": "LOCALIZED_ENDPOINT_FAILURE detected with 1 signal(s) affecting /api/error."
+  }
+]
