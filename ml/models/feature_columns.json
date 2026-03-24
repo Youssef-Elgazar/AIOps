@@ -1,0 +1,16 @@
+[
+  "avg_latency",
+  "max_latency",
+  "latency_std",
+  "request_rate",
+  "error_rate",
+  "errors_per_window",
+  "endpoint_frequency",
+  "endpoint_/api/anomaly",
+  "endpoint_/api/db",
+  "endpoint_/api/error",
+  "endpoint_/api/normal",
+  "endpoint_/api/slow",
+  "endpoint_/api/validate",
+  "endpoint_unknown"
+]

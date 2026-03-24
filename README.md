@@ -5,21 +5,22 @@ By: Youssef Ali Elsayed Ahmed. ID: 20100251.
 
 ## Project Brief
 
-This project demonstrates an end-to-end AIOps workflow in two phases. Phase 1 builds observability for an Express API using structured logs, Prometheus metrics, and Grafana dashboards. Phase 2 adds a standalone detection engine that continuously queries Prometheus, learns dynamic baselines, detects multi-signal anomalies, correlates signals into incidents, and emits alerts. Together, the system shows how to move from raw telemetry to actionable incident intelligence in a realistic, testable setup.
+This project demonstrates an end-to-end AIOps workflow in three phases. Phase 1 builds observability for an Express API using structured logs, Prometheus metrics, and Grafana dashboards. Phase 2 adds a standalone rule-based detection engine that continuously queries Prometheus, learns dynamic baselines, detects multi-signal anomalies, correlates signals into incidents, and emits alerts. Phase 3 adds an offline ML anomaly detection pipeline built from exported logs and ground-truth anomaly windows. Together, the system shows how to move from raw telemetry to actionable incident intelligence in a realistic, testable setup.
 
 ## Stack
 
-| Component        | Tech                      |
-| ---------------- | ------------------------- |
-| API Server       | Node.js + Express         |
-| Database         | SQLite (sql.js)           |
-| Validation       | Joi                       |
-| Logging          | Winston (structured JSON) |
-| Metrics          | prom-client (Prometheus)  |
-| Visualization    | Grafana                   |
-| Load Generation  | Python 3 (stdlib only)    |
-| Detection Engine | Node.js (standalone loop) |
-| Containers       | Docker Compose            |
+| Component        | Tech                           |
+| ---------------- | ------------------------------ |
+| API Server       | Node.js + Express              |
+| Database         | SQLite (sql.js)                |
+| Validation       | Joi                            |
+| Logging          | Winston (structured JSON)      |
+| Metrics          | prom-client (Prometheus)       |
+| Visualization    | Grafana                        |
+| Load Generation  | Python 3 (stdlib only)         |
+| Detection Engine | Node.js (standalone loop)      |
+| ML Pipeline      | Python (pandas + scikit-learn) |
+| Containers       | Docker Compose                 |
 
 ---
 
@@ -48,6 +49,23 @@ aiops-project/
 |- scripts/
 |  |- export_logs.js
 |  |- traffic_generator.py
+|- ml/
+|  |- build_dataset.py       # Builds 60s-window dataset from logs.json
+|  |- train_model.py         # Feature engineering + model training
+|  |- predict.py             # Isolation Forest inference + metrics
+|  |- visualize.py           # Plot generation
+|  |- requirements.txt       # ML dependencies
+|  |- aiops_dataset.csv      # Generated dataset
+|  |- anomaly_predictions.csv # Generated predictions
+|  |- models/
+|  |  |- isolation_forest.pkl
+|  |  |- oneclass_svm.pkl
+|  |  |- scaler.pkl
+|  |  |- feature_columns.json
+|  |- plots/
+|     |- latency_timeline.png
+|     |- error_rate_timeline.png
+|     |- anomaly_detection.png
 |- storage/
 |  |- logs/
 |  |- aiops/
@@ -318,6 +336,135 @@ With detector running and `python scripts/traffic_generator.py --anomaly error_s
 - Incidents and alerts were generated and persisted in `storage/aiops/`
 
 This confirms observability (Phase 1) and anomaly detection/correlation (Phase 2) are integrated and functioning end-to-end.
+
+---
+
+## Phase 3 ML Anomaly Detection (Offline from Logs)
+
+Phase 3 is fully log-driven and does not query Prometheus.
+
+### Inputs
+
+- `logs.json` (exported request logs)
+- `ground_truth.json` (anomaly window timestamps)
+
+### Setup
+
+```bash
+python -m pip install -r ml/requirements.txt
+```
+
+### Run Order
+
+```bash
+python ml/build_dataset.py
+python ml/train_model.py
+python ml/predict.py
+python ml/visualize.py
+```
+
+### Step 1 - Dataset Construction
+
+Script: `ml/build_dataset.py`
+
+- Filters to request-completed records (`message == "request_completed"` or records with `latency_ms`)
+- Parses timestamps as UTC
+- Builds 60-second windows per endpoint
+- Computes:
+  - `avg_latency`
+  - `max_latency`
+  - `latency_std`
+  - `request_rate`
+  - `error_rate`
+  - `errors_per_window`
+  - `endpoint_frequency`
+  - `is_anomaly_window` (window overlap with ground truth)
+- Writes: `ml/aiops_dataset.csv`
+
+Error record logic:
+
+- `severity == "error"`
+- OR `status_code >= 400`
+- OR `error_category != null`
+
+### Step 2 - Feature Engineering + Training
+
+Script: `ml/train_model.py`
+
+- Features:
+  - numeric: `avg_latency, max_latency, latency_std, request_rate, error_rate, errors_per_window, endpoint_frequency`
+  - categorical: one-hot encoded `endpoint`
+- Standardizes features with `StandardScaler`
+- Hard train/test split rule:
+  - train: rows where `is_anomaly_window == 0`
+  - test: all rows
+
+### Step 3 - Models Saved
+
+- Isolation Forest:
+  - `contamination=0.05`
+  - `n_estimators=200`
+  - `random_state=42`
+  - `max_samples="auto"`
+- One-Class SVM:
+  - `kernel="rbf"`
+  - `nu=0.05`
+
+Artifacts written to `ml/models/`:
+
+- `isolation_forest.pkl`
+- `oneclass_svm.pkl`
+- `scaler.pkl`
+- `feature_columns.json`
+
+### Step 4 - Prediction + Detection Report
+
+Script: `ml/predict.py`
+
+- Loads model/scaler/features from disk
+- Applies identical preprocessing
+- Uses Isolation Forest outputs:
+  - `decision_function()` -> `anomaly_score`
+  - `predict()` -> `is_anomaly` (`-1` mapped to `1`, else `0`)
+- Writes: `ml/anomaly_predictions.csv`
+- Prints:
+  - total predicted anomalies
+  - true positives
+  - false positives
+  - false negatives
+  - precision, recall, F1
+
+### Step 5 - Visualization
+
+Script: `ml/visualize.py`
+
+Generates PNG plots in `ml/plots/`:
+
+- `latency_timeline.png` - average latency per endpoint over time
+- `error_rate_timeline.png` - error rate per endpoint over time
+- `anomaly_detection.png` - anomaly score scatter with threshold line
+
+Plot conventions:
+
+- `matplotlib`, `figsize=(14, 5)`
+- anomaly window highlighted in red
+- rotated x-axis labels
+- legends positioned outside plot area
+
+### ML Dependencies
+
+Contained in `ml/requirements.txt`:
+
+- `pandas`
+- `scikit-learn`
+- `matplotlib`
+- `joblib`
+- `numpy`
+
+### Notes
+
+- All scripts are independently runnable and resolve paths relative to project root.
+- If `is_anomaly_window` rows are zero, check timestamp overlap between `logs.json` and `ground_truth.json`; metrics like precision/recall/F1 will not be meaningful without overlap.
 
 ---
 
