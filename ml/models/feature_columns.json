@@ -11,6 +11,5 @@
   "endpoint_/api/error",
   "endpoint_/api/normal",
   "endpoint_/api/slow",
-  "endpoint_/api/validate",
-  "endpoint_unknown"
+  "endpoint_/api/validate"
 ]
